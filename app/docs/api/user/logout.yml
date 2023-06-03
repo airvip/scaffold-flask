@@ -1,0 +1,18 @@
+tags:
+  - user
+summary: logout
+operationId: logout
+description: logout ...
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: logout success
+        errno:
+          type: integer
+          description: errno
+          example: 0

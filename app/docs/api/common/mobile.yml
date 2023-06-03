@@ -1,0 +1,14 @@
+tags:
+  - ping
+summary: mobile
+operationId: mobile
+description: mobile
+parameters:
+  - name: mobile
+    in: path
+    description: mobile number
+    type: string
+    required: true
+responses:
+  200:
+    description: mobile number

@@ -1,0 +1,32 @@
+{% extends "admin/base.html" %}
+{% block title %}首页{% endblock %}
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+<h1 id="main-color">Hello {{ data["name"] }} - {{ data.version }} !!!</h1>
+<div>现在时间： {{ data["now_date_time"]}} </div>
+
+<ul>
+    {% for item in
+    [{'name':'airvip','age':24},{'name':'python','age':12},{'name':'lisy','age':18}]|sort(attribute='age') %}
+    <li>{{item.age}} --- {{item.name}}</li>
+    {% endfor %}
+</ul>
+
+<div>
+    {{ 'airvip'|length }}
+    {{ ['airvip','lisy','python']|count }}
+</div>
+
+<div>
+    {{ [{'name':'airvip','age':24},{'name':'python','age':12},{'name':'lisy','age':18}]|map('upper')|join(', ') }}
+</div>
+
+<div>
+    {{ ['airvip','lisy','python']|random }}
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,14 @@
+tags:
+  - ping
+summary: get code
+operationId: get_image_code
+description: get code
+parameters:
+  - name: image_code_id
+    in: path
+    description: image code number
+    type: string
+    required: true
+responses:
+  200:
+    description: code number

@@ -1,0 +1,18 @@
+tags:
+  - user
+summary: check login
+operationId: check_login
+description: check login ...
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: is login
+        errno:
+          type: integer
+          description: errno
+          example: 0

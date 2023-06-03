@@ -1,0 +1,15 @@
+tags:
+  - ping
+summary: sms
+operationId: sms
+description: sms
+responses:
+  200:
+    description: ok
+    schema:
+      type: object
+      properties:
+        msg:
+          type: string
+          description: send template
+          example: send template

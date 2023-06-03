@@ -1,0 +1,33 @@
+tags:
+  - user
+summary: user
+operationId: set_user_avatar
+description: user avatar uppload
+parameters:
+  - name: avatar
+    in: formData
+    description: avatar info
+    type: file
+    required: true
+responses:
+  200:
+    description: mobile number
+    schema:
+      type: object
+      properties:
+        errno:
+          type: integer
+          example: 200
+          description: errno
+        errmsg:
+          type: string
+          example: success
+          description: errmsg
+        data:
+          type: object
+          properties:
+            avatar_url:
+              type: string
+              description: avatar url
+              example: /static/img/avatar.jpg
+              description: avatar url

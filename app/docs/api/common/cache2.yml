@@ -1,0 +1,8 @@
+tags:
+  - ping
+summary: cache
+operationId: cache2
+description: cache demo 2
+responses:
+  200:
+    description: ok

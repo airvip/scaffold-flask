@@ -1,0 +1,32 @@
+tags:
+  - user
+summary: login
+operationId: login
+description: login ...
+parameters:
+  - name: Item
+    in: body
+    schema:
+      type: object
+      properties:
+        mobile:
+          type: string
+          description: mobile
+          example: "13800138000"
+        password:
+          type: string
+          description: password
+          example: "123456"
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: is login
+        errno:
+          type: integer
+          description: errno
+          example: 0

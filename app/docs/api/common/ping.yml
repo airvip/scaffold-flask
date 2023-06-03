@@ -1,0 +1,14 @@
+tags:
+  - ping
+summary: ping
+operationId: ping
+description: ping
+parameters:
+  - name: name
+    in: path
+    description: name
+    type: string
+    required: true
+responses:
+  200:
+    description: pong

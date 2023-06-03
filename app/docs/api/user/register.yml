@@ -1,0 +1,36 @@
+tags:
+  - user
+summary: register
+operationId: register
+description: register ...
+parameters:
+  - name: Item
+    in: body
+    schema:
+      type: object
+      properties:
+        username:
+          type: string
+          description: username
+          example: airvip
+        mobile:
+          type: string
+          description: mobile
+          example: "13800138000"
+        password:
+          type: string
+          description: password
+          example: "123456"
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: is login
+        errno:
+          type: integer
+          description: errno
+          example: 0

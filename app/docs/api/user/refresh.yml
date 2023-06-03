@@ -1,0 +1,10 @@
+tags:
+  - user
+summary: refresh token
+operationId: refresh
+description: "refresh access token, header Authorization: Bearer refresh_token"
+responses:
+  200:
+    description: success
+security:
+  - bearerAuth: []

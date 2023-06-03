@@ -1,0 +1,36 @@
+tags:
+  - ping
+summary: get code
+operationId: get_sms_code
+description: get code
+parameters:
+  - name: mobile
+    in: path
+    description: mobile number
+    type: string
+    required: true
+  - name: image_code_id
+    in: query
+    description: image code number
+    type: string
+    required: true
+  - name: image_code
+    in: query
+    description: image code
+    type: string
+    required: true
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: send template
+          example: send template
+        errno:
+          type: integer
+          description: errno
+          example: 0
+        

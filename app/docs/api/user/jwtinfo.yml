@@ -1,0 +1,10 @@
+tags:
+  - user
+summary: protected info
+operationId: jwtinfo
+description: protected ...
+responses:
+  200:
+    description: success
+security:
+  - bearerAuth: []

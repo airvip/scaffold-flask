@@ -1,0 +1,29 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.git
+migrations/
+
+# editor
+.idea/
+.vscode/
+
+# logs
+logs/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt

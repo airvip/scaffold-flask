@@ -1,0 +1,42 @@
+tags:
+  - user
+summary: get user list
+operationId: get_user_list
+description: get use list
+definitions:
+  User:
+    type: object
+    properties:
+      user_id:
+        type: integer
+        description: user id
+        example: 1
+      username:
+        type: string
+        description: username
+        example: admin
+      create_time:
+        type: string
+        description: create time
+        example: 2018-01-01 00:00:00
+      update_time:
+        type: string
+        description: update time
+        example: 2018-01-01 00:00:00
+responses:
+  200:
+    description: success
+    schema:
+      type: object
+      properties:
+        errmsg:
+          type: string
+          description: success
+        errno:
+          type: integer
+          description: errno
+          example: 0
+        data:
+          type: array
+          items:
+            $ref: '#/definitions/User'
